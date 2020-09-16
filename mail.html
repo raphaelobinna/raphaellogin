@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <style>
+            body{background: skyblue; font-family: Verdana; color: rgb(238, 245, 243); padding: 30px; }
+            h1{font-size: 48px; text-transform: uppercase; letter-spacing: 2px; text-align: center;}
+            p{font-size: 16px; text-align: center; color: black;}
+            label {
+    font-weight: bold;
+    color: black;
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    outline: none;
+    border: 1px solid #ccc;
+    background-color: white;
+    font: inherit;
+    width: 100%;
+    padding: 6px 10px;
+}
+
+input:focus {
+    outline: none;
+    background-color: #ccc;
+}
+form {
+    outline: none;
+    border: 5px solid #ccc;
+    width: 300px;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: blanchedalmond;
+    border-radius: 20px;
+    margin: 20px auto;
+    
+    }
+    Button {
+        background-color: greenyellow;
+        border: none;
+        color: black;
+        outline: none;
+        cursor: pointer;
+        font: inherit;
+        padding: 10px;
+        font-weight: bold;
+    }
+
+        </style>
+
+    </head>
+   
+    
+    <body id="todo-table">
+        <form id="contact-form" method="POST" action="/email">
+            <label for="text">Your Details</label><br/>
+            
+            <label for="text">Your Name</label><br/>
+
+            <input type="text" name="text" /><br/>
+            <label for="email">Your email</label><br/>
+            <input type="email" name="email"/><br/>
+            <button  type="submit" value="submit">SUBMIT</button>
+        </form>
+        <h1>PROCEED TO YOUR GMAIL TO RECIEVE THE CHAT INVITATION LINK</h1>
+    </body>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.js" 
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+    crossorigin="anonymous">
+    </script>
+    <script>
+        $('form').on('submit', (e)=> {
+            e.preventDefault();
+
+            const email = $('#email').val().trim();
+            const text = $('#text').val().trim();
+            
+            const data = {
+                email,
+                text
+            }
+
+            $.post('/email', data, function () {
+                console.log('server received our data')
+            })
+        })
+    </script> -->
+</html>
